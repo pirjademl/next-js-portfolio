@@ -25,9 +25,7 @@ const CardProject: FC<ProjectsCardProps> = ({
                 <h3 className='pl-2 pt-2 text-sm'>{title}</h3>
                 <p className='pl-2 mb-2 pt-2  text-xs text-slate-500 font-light  '>{techStack}</p>
             </div>
-            {console.log('hello world')}
         </div >
-
     </Link>
   );
 };
