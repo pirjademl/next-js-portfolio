@@ -1,13 +1,5 @@
 import { FC } from "react";
-import Image from "next/image";
-import { IProjectSectionData } from "@components/@/lib/data";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../../ui/card";
+import { IProjectSectionData } from "../../../lib/data";
 import CardProject from "../../ui/ProjectCard";
 interface CardSectionProps {
   title: string;
