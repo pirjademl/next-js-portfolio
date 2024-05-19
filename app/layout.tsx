@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { montserrat } from "./fonts";
-import { Sidebar } from "@components/@/components/Sidebar";
-import { Header } from "@components/@/components/Header";
+import { Header, Sidebar } from "../@/components";
 
 export const metadata: Metadata = {
   title: "Magdum Pirjade Portfolio",
