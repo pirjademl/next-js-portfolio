@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Toaster } from "../@/components/ui/toaster";
 import "./globals.css";
 import { montserrat } from "./fonts";
 import { Header, Sidebar } from "../@/components";
+import { ScaleLoader } from "react-spinners";
 
 export const metadata: Metadata = {
   title: "Magdum Pirjade Portfolio",
@@ -25,6 +27,7 @@ export default function RootLayout({
             {children}
           </div>
           <Toaster />
+          <Suspense fallback={<ScaleLoader />} />
         </main>
       </body>
     </html>
