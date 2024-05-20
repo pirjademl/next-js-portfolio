@@ -5,6 +5,7 @@ import "./globals.css";
 import { montserrat } from "./fonts";
 import { Header, Sidebar } from "../@/components";
 import Loading from "./loading";
+import { Analytics } from "@vercel/analytics/next";
 export const metadata: Metadata = {
   title: "Magdum Pirjade Portfolio",
   description:
@@ -26,6 +27,7 @@ export default function RootLayout({
             {children}
           </div>
           <Toaster />
+          <Analytics />
           <Suspense fallback={<Loading />} />
         </main>
       </body>
