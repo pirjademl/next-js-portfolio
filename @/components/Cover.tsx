@@ -20,8 +20,8 @@ export const Cover: FC<CoverProps> = ({}) => {
               target="_blank"
               href="https://instagram.com/magdum._pirjade"
             >
-              <Button className="flex gap-2" variant="secondary" size={"sm"}>
-                <Instagram />
+              <Button variant="outline">
+                <Instagram color="purple" size={15} />
                 <span className="hidden md:block">Follow me on Instagram</span>
               </Button>
             </Link>
