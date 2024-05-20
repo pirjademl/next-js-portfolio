@@ -4,8 +4,7 @@ import { Toaster } from "../@/components/ui/toaster";
 import "./globals.css";
 import { montserrat } from "./fonts";
 import { Header, Sidebar } from "../@/components";
-import { ScaleLoader } from "react-spinners";
-
+import Loading from "./loading";
 export const metadata: Metadata = {
   title: "Magdum Pirjade Portfolio",
   description:
@@ -27,7 +26,7 @@ export default function RootLayout({
             {children}
           </div>
           <Toaster />
-          <Suspense fallback={<ScaleLoader />} />
+          <Suspense fallback={<Loading />} />
         </main>
       </body>
     </html>
