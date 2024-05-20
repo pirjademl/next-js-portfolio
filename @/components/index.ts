@@ -7,3 +7,4 @@ export * from "./IconHolder";
 export * from "./ui";
 export * from "./IconHolder";
 export * from "./sections";
+export * from "./form";

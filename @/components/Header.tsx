@@ -19,16 +19,10 @@ import {
   DrawerClose,
 } from "./ui/drawer";
 import { useMediaQuery } from "../hooks";
-import { Input, Label, Textarea } from "./ui";
-import { Form } from "./ui/form";
+import { ContactForm } from "./form";
 
 export type HeaderProps = {};
 export const Header: FC<HeaderProps> = () => {
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    console.log(e);
-  };
-
   const [open, setOpen] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
   if (isDesktop) {
@@ -48,17 +42,8 @@ export const Header: FC<HeaderProps> = () => {
                 <DialogDescription>
                   Contact me and I will try to get to you asap!!!
                 </DialogDescription>
+                <ContactForm />
               </DialogHeader>
-
-              <Form onSubmit={handleSubmit}>
-                <div className="flex gap-2">
-                  <Input placeholder="John" />
-                  <Input placeholder="Doe" />
-                </div>
-                <Input placeholder="Domain@mail.com" />
-                <Textarea placeholder="Enter your query Here" />
-                <Button variant={"outline"}> Submit</Button>
-              </Form>
             </DialogContent>
           </Dialog>
         </nav>
@@ -83,16 +68,7 @@ export const Header: FC<HeaderProps> = () => {
                 Contact me and I will try to get to you asap!!!
               </DialogDescription>
             </DrawerHeader>
-
-            <Form className="px-3" onSubmit={handleSubmit}>
-              <div className="flex gap-2">
-                <Input placeholder="John" />
-                <Input placeholder="Doe" />
-              </div>
-              <Input placeholder="Domain@mail.com" />
-              <Textarea placeholder="Enter your query Here" />
-              <Button variant={"outline"}> Submit</Button>
-            </Form>
+            <ContactForm />
             <DrawerFooter>
               <DrawerClose>
                 <Button variant={"secondary"}>cancel</Button>
