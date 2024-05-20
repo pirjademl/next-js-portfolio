@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Toaster } from "../@/components/ui/toaster";
 import "./globals.css";
 import { montserrat } from "./fonts";
 import { Header, Sidebar } from "../@/components";
@@ -23,6 +24,7 @@ export default function RootLayout({
             <Header />
             {children}
           </div>
+          <Toaster />
         </main>
       </body>
     </html>
