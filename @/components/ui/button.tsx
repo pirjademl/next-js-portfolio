@@ -10,6 +10,8 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "gap-3 bg-green-700  hover:bg-green-600 ",
+        submit:
+          "bg-gray-200/50 text-background hover:bg-gray-200 transition-colors duration-500 text-center px-3 py-1",
         destructive:
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline: " gap-3 text-xs bg-background text-foreground py-1 px-3",

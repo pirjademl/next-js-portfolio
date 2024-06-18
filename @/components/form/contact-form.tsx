@@ -54,14 +54,14 @@ export const ContactForm: FC<ContactFormProps> = () => {
       </div>
       <Input
         {...register("email", { required: true })}
-        placeholder="Domain@mail.com"
+        placeholder="mail@Domain.com"
         type="email"
       />
       <Textarea
         {...register("query", { required: true })}
         placeholder="Enter your query Here"
       />
-      <Button variant={"outline"}> Submit</Button>
+      <Button variant={"submit"}> Submit</Button>
     </Form>
   );
 };
