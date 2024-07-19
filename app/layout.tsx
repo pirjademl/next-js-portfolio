@@ -25,8 +25,7 @@ export default function RootLayout({
           content="O9zhHAquwtcmzyqKuET229EROpSlKbCM8_2GObUkz3I"
         />
       </head>
-
-      <body className={montserrat.className}>
+     <body className={montserrat.className}>
         <main className="flex">
           <Sidebar />
           <div className="flex flex-col w-full">
