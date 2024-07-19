@@ -19,6 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="O9zhHAquwtcmzyqKuET229EROpSlKbCM8_2GObUkz3I"
+        />
+      </head>
+
       <body className={montserrat.className}>
         <main className="flex">
           <Sidebar />
