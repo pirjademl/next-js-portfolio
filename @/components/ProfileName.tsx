@@ -16,7 +16,7 @@ const ProfileName: FC<ProfileNameProps> = ({ name, nickname }) => {
         {nickname}
         <Link
           className="block md:hidden"
-          href="https://instagram.com/ezSnippet"
+          href="https://instagram.com/magdum._pirjade"
           target="_blank"
         >
           <Button variant="secondary" size={"icon"}>
