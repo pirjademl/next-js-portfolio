@@ -18,6 +18,7 @@ export const CardSection: FC<CardSectionProps> = ({ title, version, data }) => {
             title={project.title}
             src={project.src}
             techStack={project.stack}
+            href={project.url}
           />
         ))}
       </div>

@@ -1,55 +1,55 @@
-import { Interface } from "readline"
+import { Interface } from "readline";
 
-export interface ITechSectionData{
-    id:number,
-    title:string,
-    icon:string
+export interface ITechSectionData {
+  id: number;
+  title: string;
+  icon: string;
 }
-export interface IProjectSectionData{
-    id:number,
-    src:string,
-    title:string,
-    stack:string
+export interface IProjectSectionData {
+  id: number;
+  src: string;
+  title: string;
+  stack: string;
+  url: string;
 }
-export interface IOthers{
-    id:number,
-    title:string,
-    src:string
+export interface IOthers {
+  id: number;
+  title: string;
+  src: string;
+}
 
-}
-
-export const ProjectsData:IProjectSectionData[]=[
-    {
-        id:1,
-        src:'/exam.jpeg',
-        title:"Online Examination System",
-        stack:"Reactjs,Nodejs,mongodb,express,Material ui"
-    },
-    {
-        id:2,
-        src:'/job-dekho.jpeg',
-        title:"job Dekho   clone",
-        stack:"HTMl ,CSS, Javascript,nodejs, reactjs,expresjs"
-    
-    },
-    {
-        id:3,
-        src:'/vaccine-mgmt.png',
-        title:"Vaccine Mangement system",
-        stack:"HTML,CSS, Javascript,Java,Mysql,jdbc,JConnector"
-    
-    },
-    {
+export const ProjectsData: IProjectSectionData[] = [
+  {
+    id: 1,
+    src: "/exam.jpeg",
+    title: "Online Examination System",
+    stack: "Reactjs,Nodejs,mongodb,express,Material ui",
+    url: "https://github.com/pirjademl/Examination_Portal",
+  },
+  {
+    id: 2,
+    src: "/job-dekho.jpeg",
+    title: "job Dekho   clone",
+    stack: "HTMl ,CSS, Javascript,nodejs, reactjs,expresjs",
+    url: "https://github.com/pirjademl/Job-Dekho",
+  },
+  {
+    id: 3,
+    src: "/vaccine-mgmt.png",
+    title: "Vaccine Mangement system",
+    stack: "HTML,CSS, Javascript,Java,Mysql,jdbc,JConnector",
+    url: "https://github.com/pirjademl/Vaccine-Management-system",
+  },
+  {
     id: 4,
     title: "Library management REST API",
     src: "/library-mgmt.jpg",
     stack: "Nodejs, Express js,postman,bcrypt,monogdb,mongoose",
-    }
+    url: "https://github.com/pirjademl/Book-mgmt-rest-api",
+  },
+];
 
-]
-
-
-export const FrontEnd:ITechSectionData[] = [
+export const FrontEnd: ITechSectionData[] = [
   {
     id: 1,
     title: "HTMl",
@@ -91,7 +91,7 @@ export const FrontEnd:ITechSectionData[] = [
     icon: "Code",
   },
 ];
-export const backEnd:ITechSectionData[] = [
+export const backEnd: ITechSectionData[] = [
   {
     id: 1,
     title: "Node.js",
@@ -133,7 +133,7 @@ export const Database = [
     icon: "Code",
   },
 ];
-export const devOps:ITechSectionData[] = [
+export const devOps: ITechSectionData[] = [
   {
     id: 1,
     title: "Git",
@@ -160,14 +160,13 @@ export const devOps:ITechSectionData[] = [
     title: "Vercel",
     icon: "Code",
   },
-{
+  {
     id: 6,
     title: "Docker",
     icon: "Code",
   },
-
 ];
-export const others:IOthers[]= [
+export const others: IOthers[] = [
   {
     id: 1,
     title: "REST API",
